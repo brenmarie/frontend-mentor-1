@@ -1,7 +1,149 @@
-/* Decent Defaults */
+/* Sedan Section */
 
-img,
-video {
-  width: 100%;
-  height: auto;
+article section {
+  padding: 4rem;
+}
+
+article section.sedan {
+  background-color: hsl(31, 77%, 52%);
+  grid-row-start: 1;
+  grid-row-end: 3;
+  overflow: hidden;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+article section.sedan h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  color: hsl(0, 0%, 95%);
+}
+
+article section.sedan p { 
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 200%;
+  color: hsla(0, 0%, 100%, 0.75)
+}
+
+article section.sedan button {
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 100%;
+  font-weight: 600;
+  text-align: center;
+  width: 11rem;
+  height: 3rem;
+  margin-top: 4rem;
+  color: hsl(31, 77%, 52%);
+  border-radius: 1.5625rem;
+}
+
+/* SUV Section */
+
+article section.suv {
+  background-color: hsl(184, 100%, 22%);
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+article section.suv h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  color: hsl(0, 0%, 95%);
+}
+
+article section.suv p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 200%;
+  color: hsla(0, 0%, 100%, 0.75)
+}
+
+article section.suv button {
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 100%;
+  font-weight: 600;
+  text-align: center;
+  width: 11rem;
+  height: 3rem;
+  margin-top: 4rem;
+  color: hsl(184, 100%, 22%);
+  border-radius: 1.5625rem;
+}
+
+/* Luxary Section */
+
+article section.luxary {
+  background-color: hsl(179, 100%, 13%);
+  grid-row-start: 1;
+  grid-row-end: 3;
+  overflow: hidden;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+article section.luxary h1 {
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 3.5rem;
+  margin-bottom: 2rem;
+  color: hsl(0, 0%, 95%);
+}
+
+article section.luxary p {
+  font-family: 'Lexend Deca', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 200%;
+  color: hsla(0, 0%, 100%, 0.75)
+}
+
+article section.luxary button {
+  background-color: hsl(0, 0%, 95%);
+  border: none;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 100%;
+  font-weight: 600;
+  text-align: center;
+  width: 11rem;
+  height: 3rem;
+  margin-top: 4rem;
+  color: hsl(179, 100%, 13%);
+  border-radius: 1.5625rem; 
+}
+
+/* All */
+
+.grid {
+
+max-width: 80rem;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/*Desktop Only Styles */
+@media (min-width: 55em) {
+  .grid {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+* {
+  box-sizing: border-box;
 }
